@@ -1,0 +1,27 @@
+{
+  "name": "node-tivobackup",
+  "version": "0.0.0",
+  "description": "Backup files from tivos.",
+  "main": "app.js",
+  "dependencies": {
+    "log4js": "~0.6.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ryanbreen/node-tivobackup.git"
+  },
+  "keywords": [
+    "tivo",
+    "node.js"
+  ],
+  "author": "Ryan and Jenn Breen",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/ryanbreen/node-tivobackup/issues"
+  },
+  "homepage": "https://github.com/ryanbreen/node-tivobackup"
+}
