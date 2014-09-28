@@ -1,5 +1,4 @@
 var fs = require('fs');
-var logger = require('./logger.js').getLogger('config');
 
 var DEFAULT_CONFIG_FILE = __dirname + '/../config.json';
 var CONFIG_FILE = DEFAULT_CONFIG_FILE;
@@ -33,7 +32,7 @@ exports.getState = function() {
 		try {
 			var configBlob = fs.readFileSync(CONFIG_FILE, 'utf8');
 		} catch (e) {
-			logger.fatal("Error occurred while attempting to read config file %s: %s", CONFIG_FILE, e);
+			consoler.error("Error occurred while attempting to read config file %s: %s", CONFIG_FILE, e);
 		}
 	
 		if (configBlob !== undefined) {

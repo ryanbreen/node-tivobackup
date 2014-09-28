@@ -3,5 +3,17 @@
     
   ],
   "mak" : "YOUR_MAC_GOES_HERE",
-  "store" : "/path/to/store/tivo/files"
+  "store" : "/path/to/store/tivo/files",
+  "logger": {
+    "name" : "tivobackup",
+    "streams" : [{
+      "level": "trace",
+      "stream": "process.stdout"
+    },
+    {
+      "level": "debug",
+      "type": "rotating-file",
+      "path": "/path/to/store/tivo/logs/tivo.log"
+    }]
+  }
 }
