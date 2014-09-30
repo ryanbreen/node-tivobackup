@@ -9,5 +9,5 @@ Proposed pipeline:
 - [x] Query the now playing URL for each TiVo to find all shows flagged as Do Not Delete
 - [ ] Reconcile that list against local storage to find any unsaved shows
 - [ ] Save the unsaved shows to directories and files named based on the TiVo file metadata
-- [ ] Augment TiVo metadata with information from TVDB
+- [ ] Augment TiVo metadata with information from TVDB, IMDB, or somewhere else (?)
 - [ ] Populate a pyTivo metadata directory
