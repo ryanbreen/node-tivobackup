@@ -16,9 +16,10 @@ config.tivos.forEach(function(tivo) {
 		logger.info("There are %d recordings to save", recordings.length)
 		recordings.forEach(function(recording) {
 			if (recording.is_movie) {
-				logger.trace('Movie URL %s, title "%s", original air date: %s', recording.url, recording.name, recording.movieYear);
+				logger.trace('Movie URL %s, title "%s", original air date: %s', recording.url, recording.title, recording.movieYear);
 			} else {
-				logger.trace('Show URL %s, %s episode "%s", original air date: %s', recording.url, recording.name, recording.episode_name, recording.originalAirDate);
+				logger.trace('Show URL %s, %s episode "%s", original air date: %s',
+					recording.url, recording.seriesTitle, recording.episodeTitle, recording.originalAirDate);
 			}
 
 			if (!file_manager.recordingExists(recording)) {
