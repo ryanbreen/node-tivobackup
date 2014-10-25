@@ -18,7 +18,7 @@ config.tivos.forEach(function(tivo) {
 			logger.trace(util.inspect(recording));
 
 			if (!file_manager.recordingExists(recording)) {
-				logger.info("Need to store recording %s", recording.name);
+				logger.info("Need to store recording %s", recording.title);
 				file_manager.downloadRecording(recording);
 			}
 		});
