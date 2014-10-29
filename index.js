@@ -19,7 +19,9 @@ config.tivos.forEach(function(tivo) {
 
 			if (!file_manager.recordingExists(recording)) {
 				logger.info("Need to store recording %s", recording.title);
-				file_manager.storeRecording(recording);
+				file_manager.storeRecording(recording, function(err) {
+					if (err) return logger.error('Failed to save recording %s due to %s', recording.title, err);
+				});
 			}
 		});
 	});
