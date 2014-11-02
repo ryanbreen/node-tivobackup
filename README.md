@@ -9,4 +9,5 @@ Proposed pipeline:
 - [x] Query the now playing URL for each TiVo to find all shows flagged as Do Not Delete
 - [x] Populate a pyTivo file for each recording
 - [x] Reconcile that list against local storage to find any unsaved shows
-- [ ] Save the unsaved shows to directories and files named based on the TiVo file metadata
+- [x] Save the unsaved shows to directories and files named based on the TiVo file metadata
+- [ ] Make progress bars sane when multiple recordings are transferring at once
