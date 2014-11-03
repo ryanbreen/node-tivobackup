@@ -10,4 +10,5 @@ Proposed pipeline:
 - [x] Populate a pyTivo file for each recording
 - [x] Reconcile that list against local storage to find any unsaved shows
 - [x] Save the unsaved shows to directories and files named based on the TiVo file metadata
+- [ ] Refuse to download if disk is within 3x recording size
 - [ ] Make progress bars sane when multiple recordings are transferring at once
