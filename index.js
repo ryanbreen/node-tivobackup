@@ -15,7 +15,7 @@ config.tivos.forEach(function(tivo) {
 
 		logger.info("There are %d recordings to save", recordings.length)
 		recordings.forEach(function(recording) {
-			logger.trace(util.inspect(recording));
+			//logger.trace(util.inspect(recording));
 
 			if (!file_manager.recordingExists(recording)) {
 				logger.info("Need to store recording %s", recording.title);
